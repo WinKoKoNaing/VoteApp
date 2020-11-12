@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="2dp">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ivBoy"
+                android:layout_marginTop="5dp"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:transitionName="ivCategory"
+                android:src="@drawable/bestcouple" />
+
+            <TextView
+                android:id="@+id/tvCoupleBoyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:letterSpacing="0.1"
+                android:textSize="16sp"
+                android:text="Nanda Myat Thu" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textSize="10sp"
+                android:text="Code" />
+            <TextView
+                android:id="@+id/tvCoupleCode"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:background="@color/couple"
+                android:gravity="center"
+                android:padding="2dp"
+                android:text="1"
+                android:textColor="@android:color/white"
+                android:typeface="serif" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <ImageView
+                android:id="@+id/ivGirl"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:transitionName="ivCategory"
+                android:src="@drawable/bestcouple" />
+
+            <TextView
+                android:id="@+id/tvCoupleGirlName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:gravity="center"
+                android:padding="5dp"
+                android:letterSpacing="0.1"
+                android:textSize="16sp"
+                android:text="Shwe Min Thar" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

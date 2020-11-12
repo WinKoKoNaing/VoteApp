@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Vote App</string>
+    <string name="facebook_app_id">162772304512754</string>
+    <string name="fb_login_protocol_scheme">fb162772304512754</string>
+    <string name="str_all_selected">All Students</string>
+
+    <string-array name="years_title">
+        <item>All Student</item>
+        <item>1CST</item>
+        <item>2CS</item>
+        <item>2CT</item>
+        <item>3CS</item>
+        <item>3CT</item>
+        <item>4CS</item>
+        <item>4CT</item>
+        <item>5CS</item>
+        <item>5CT</item>
+        <!--<item>Section A</item>-->
+        <!--<item>Section B</item>-->
+        <!--<item>Section C</item>-->
+    </string-array>
+
+</resources>

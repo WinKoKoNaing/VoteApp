@@ -1,0 +1,66 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.porlar.techhousestudio.voteapp"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        packagingOptions {
+            exclude 'META-INF/proguard/androidx-annotations.pro'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:27.1.1'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    //noinspection GradleCompatible
+    implementation 'com.android.support:design:27.1.1'
+    // SQL Scanner
+    implementation 'com.budiyev.android:code-scanner:2.1.0'
+//    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    //FireBase
+    //noinspection GradleCompatible
+    implementation 'com.google.firebase:firebase-core:16.0.6'
+    implementation 'com.google.firebase:firebase-auth:16.1.0'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    //Loading
+    implementation 'com.github.ybq:Android-SpinKit:1.2.0'
+    implementation 'com.wang.avi:library:2.1.3'
+    //Circle Indicator
+    implementation 'me.relex:circleindicator:1.2.2'
+    //Pin View
+    implementation 'com.github.GoodieBag:Pinview:v1.3'
+    //Filter
+    implementation 'com.github.Yalantis:SearchFilter:v1.0.4'
+    //Toast Library
+    implementation 'com.github.GrenderG:Toasty:1.3.1'
+    // Text Library
+    implementation "com.hanks:htextview-base:0.1.6"
+    implementation "com.hanks:htextview-rainbow:0.1.6"
+    implementation "com.hanks:htextview-line:0.1.6"
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.8.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.8.0'
+    //Unicode Zawgyi
+    implementation 'myatminsoe.mdetect.android:mdetect-android:3.2'
+    //Arsenal Library
+    implementation 'gr.escsoft.michaelprimez.searchablespinner:SearchableSpinner:1.0.9'
+    implementation 'com.android.support:support-v4:28.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+apply plugin: 'com.google.gms.google-services'
